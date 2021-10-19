@@ -14,6 +14,7 @@ def convert_centigrade_to_kelvin(centigrade):
 
 
 def convert_distance(miles):
+    miles = float(input("Please input miles: "))
     kilometers = (miles * 8.0) / 5.0
     print("Converting distance in miles to kilometers:")
     print("Distance in miles:     ", miles)
