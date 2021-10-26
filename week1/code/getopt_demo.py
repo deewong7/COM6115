@@ -36,7 +36,7 @@ else:
     print('ERROR: missing option (-s STOPLIST)')
     print_help()
 
-if '-b' in opts:0
+if '-b' in opts:
     binary_weighting = 1
 
 # Print summary:
