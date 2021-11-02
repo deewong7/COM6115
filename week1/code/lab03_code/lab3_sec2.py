@@ -1,4 +1,4 @@
-def MySqrt(A):
+def my_sqrt(A):
     # initial_value = 2
     initial_value = 1e-3
     E = 1e-3  # error tolerance
@@ -23,4 +23,4 @@ def MySqrt(A):
     return x
 
 
-print(MySqrt(4))
+print(my_sqrt(4))

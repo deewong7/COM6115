@@ -1,4 +1,4 @@
-def MyCubeRoot(A):
+def my_cube_root(A):
 
     initial_x = 2
     E = 1e-3
@@ -24,4 +24,4 @@ def MyCubeRoot(A):
 
 base = 8
 A = pow(base, 3)
-print(MyCubeRoot(A))
+print(my_cube_root(A))
