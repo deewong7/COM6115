@@ -6577,3 +6577,2224 @@ endobj
 startxref
 347045
 %%EOF
+153 0 obj<</Author(Mark Hepple)/CreationDate(D:20201113020307Z)/Creator(LaTeX with Beamer class)/Keywords()/ModDate(D:20211109144807Z)/PTEX.Fullbanner(This is pdfTeX, Version 3.14159265-2.6-1.40.21 \(TeX Live 2020\) kpathsea version 6.3.2)/Producer(pdfTeX-1.40.21)/Subject()/Title(COM6115: Text Processing [4mm] Programming Tips)/Trapped/False>>endobj160 0 obj<</DA(/Helv 0 Tf 0 g )/DR<</Encoding<</PDFDocEncoding 191 0 R>>/Font<</Helv 189 0 R/ZaDb 190 0 R>>>>/Fields[]>>endobj161 0 obj<</Length 3875/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 7.0-c000 79.1357c9e, 2021/07/14-00:39:56        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Mark Hepple</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default"/>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">COM6115: Text Processing [4mm] Programming Tips</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2020-11-13T02:03:07Z</xmp:CreateDate>
+         <xmp:CreatorTool>LaTeX with Beamer class</xmp:CreatorTool>
+         <xmp:ModifyDate>2021-11-09T14:48:07Z</xmp:ModifyDate>
+         <xmp:MetadataDate>2021-11-09T14:48:07Z</xmp:MetadataDate>
+         <pdf:Keywords/>
+         <pdf:Producer>pdfTeX-1.40.21</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+         <pdfx:PTEX.Fullbanner>This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2</pdfx:PTEX.Fullbanner>
+         <xmpMM:DocumentID>uuid:037fd1ee-8ece-440c-86c5-9823a4901ac7</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:c03c0b13-e9b0-43ce-b94d-34495a854279</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobj162 0 obj<</Length 6922>>stream
+0.99 g
+0 0 362.835 272.126 re
+f
+q
+1 0 0 1 0 244.24 cm
+0.52 0.52 0.82 rg
+0 0 362.835 27.886 re
+f
+Q
+BT
+1 g
+/T1_0 14.346 Tf
+8.504 251.907 Td
+(Python)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+45.465 0 Td
+(Tips)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+29.404 0 Td
+(\026)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+18.226 0 Td
+(hash-based)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+67.025 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+29.681 0 Td
+(structures)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+65.063 0 Td
+(\(ctd\))Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-242.143 -25.918 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.997 Td
+[(A)28 (void)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+29.015 0 Td
+(changing)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+43.734 0 Td
+(hash)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+24.102 0 Td
+[(lo)-28 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+37.335 0 Td
+(to)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+12.947 0 Td
+(sequential)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+48.34 0 Td
+(one)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+19.421 0 Td
+(\026)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+14.452 0 Td
+(common)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+42.003 0 Td
+[(erro)28 (r)]TJ
+0 0 1 rg
+/T1_3 11.955 Tf
+-282.782 -21.211 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(If)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+9.896 0 Td
+(D)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+9.25 0 Td
+(is)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+10.328 0 Td
+(a)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+8.807 0 Td
+[(dictiona)28 (ry)82 (,)]TJ
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+49.68 0 Td
+(D.keys\(\))Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+48.711 0 Td
+(gives)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+25.532 0 Td
+(a)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+8.807 0 Td
+[(`sma)28 (rt)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+31.856 0 Td
+[(iterato)28 (r')]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+39.518 0 Td
+(over)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+22.507 0 Td
+(D's)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+18.587 0 Td
+[(k)28 (eys)]TJ
+0 0 1 rg
+/T1_3 11.955 Tf
+-273.093 -12.951 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.432 -0.997 Td
+(so)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+12.118 0 Td
+(x)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+10.458 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+15.688 0 Td
+(D.keys\(\))Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+45.153 0 Td
+(as)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.924 0 Td
+(e\036cient)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+35.829 0 Td
+(as)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+11.925 0 Td
+(x)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+10.458 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+15.687 0 Td
+(D)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.87 0 Td
+(\(but)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_9 9.963 Tf
+21.082 0 Td
+(less)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_9 9.963 Tf
+17.762 0 Td
+(elegant)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+30.462 0 Td
+(!\))Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-283.667 -19.617 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(BUT)Tj
+/T1_1 1 Tf
+1 0 0 1 -0 -0 Tm
+54.673 168.224 Td
+( )Tj
+/T1_4 10.909 Tf
+3.606 0 Td
+(all)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+13.925 0 Td
+(of)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+12.345 0 Td
+(list\(D\))Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+(,)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+46.085 0 Td
+[(list\(D.keys\()-0.999 (\)\))]TJ
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+(,)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+85.545 0 Td
+(sorted\(D\))Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+54.348 0 Td
+(return)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+30.862 0 Td
+(a)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+8.807 0 Td
+(list)Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-267.152 -12.951 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.432 -0.997 Td
+(so)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+12.118 0 Td
+(\(e.g.\))Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+27.114 0 Td
+(x)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+10.458 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+15.688 0 Td
+(sorted\(D\))Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+50.382 0 Td
+(is)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_9 9.963 Tf
+9.517 0 Td
+(sequential)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+45.575 0 Td
+(and)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_9 9.963 Tf
+18.399 0 Td
+(v.ine\036cient)Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-222.502 -21.211 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(Also)Tj
+/T1_1 1 Tf
+1 0 0 1 -0 -0 Tm
+51.978 132.069 Td
+( )Tj
+/T1_4 10.909 Tf
+3.614 0 Td
+(v.ine\036cient)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+55.024 0 Td
+(is)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+10.327 0 Td
+[(follo)27.995 (wing)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+43.508 0 Td
+(attempt)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+39.518 0 Td
+(to)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+12.947 0 Td
+(check)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+28.905 0 Td
+[(fo)27.995 (r)]TJ
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+15.732 0 Td
+(x)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+9.25 0 Td
+(in)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 10.909 Tf
+11.743 0 Td
+(D)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+(:)Tj
+ET
+q
+1 0 0 1 64.219 121.091 cm
+0.398 w 
+0 0 m
+114.182 0 l
+S
+Q
+q
+1 0 0 1 64.418 81.207 cm
+0.398 w 
+0 0 m
+0 39.685 l
+S
+Q
+q
+1 0 0 1 178.202 81.207 cm
+0.398 w 
+0 0 m
+0 39.685 l
+S
+Q
+q
+1 0 0 1 64.219 81.008 cm
+0.398 w 
+0 0 m
+114.182 0 l
+S
+Q
+BT
+/T1_10 8.966 Tf
+71.843 109.554 Td
+(for)Tj
+/T1_1 1 Tf
+1 0 0 1 -0 -0 Tm
+85.965 109.554 Td
+( )Tj
+/T1_10 8.966 Tf
+4.703 0 Td
+(k)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_10 8.966 Tf
+9.413 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_10 8.966 Tf
+14.118 0 Td
+(D.keys\(\):)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_10 8.966 Tf
+-23.531 -10.959 Td
+(if)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_10 8.966 Tf
+14.119 0 Td
+(k)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_10 8.966 Tf
+9.412 0 Td
+(==)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_10 8.966 Tf
+14.119 0 Td
+(x:)Tj
+-18.825 -10.959 Td
+(...)Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-66.449 -21.141 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.432 -0.997 Td
+(recreates)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+40.034 0 Td
+(sequential)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+44.572 0 Td
+[(cha)27.995 (racter)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+41.446 0 Td
+(of)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.343 0 Td
+[(lo)-27.995 (ok-up)]TJ
+0 0 1 rg
+/T1_3 11.955 Tf
+-148.827 -16.628 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.432 -0.996 Td
+[(surp)27.995 (risingly)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+49.635 0 Td
+(commonly)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+45.651 0 Td
+(seen!)Tj
+ET
+q
+1 0 0 1 -0 -0 cm
+0.28 0.28 0.73 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+1 g
+/T1_11 5.978 Tf
+19.729 2.658 Td
+(Ma)Tj
+1 0 0 1 -0 -0 Tm
+28.976 2.658 Td
+(rk)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_11 5.978 Tf
+8.146 0 Td
+(Hepple)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_11 5.978 Tf
+24.762 0 Td
+(\(U.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_11 5.978 Tf
+11.822 0 Td
+(She\036eld\))Tj
+ET
+q
+1 0 0 1 120.943 -0 cm
+0.52 0.52 0.82 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+140.69 2.658 Td
+(COM6115:)Tj
+/T1_1 1 Tf
+1 0 0 1 -0 -0 Tm
+172.485 2.658 Td
+( )Tj
+/T1_11 5.978 Tf
+3.121 0 Td
+[(T)97.999 (ext)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_11 5.978 Tf
+15.517 0 Td
+[(Pro)-33.007 (cessing)]TJ
+ET
+q
+1 0 0 1 241.886 -0 cm
+0.68 0.68 0.88 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+0 g
+344.645 2.658 Td
+(5)Tj
+1 0 0 1 -0 -0 Tm
+349.325 2.658 Td
+[(/)-195.998 (6)]TJ
+ET
+
+endstreamendobj163 0 obj<</Length 8991>>stream
+0.99 g
+0 0 362.835 272.126 re
+f
+q
+1 0 0 1 0 244.24 cm
+0.52 0.52 0.82 rg
+0 0 362.835 27.886 re
+f
+Q
+BT
+1 g
+/T1_0 14.346 Tf
+8.504 251.907 Td
+(Python)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+45.465 0 Td
+(Tips)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+29.404 0 Td
+(\026)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+18.226 0 Td
+(hash-based)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+67.025 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+29.681 0 Td
+(structures)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-177.08 -31.588 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(In)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+12.154 0 Td
+(text)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+21.227 0 Td
+[(p)28 (ro)-28 (cessing)]TJ
+0 g
+(,)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+52.797 0 Td
+(often)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+26.646 0 Td
+[(w)28 (ant)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+25.367 0 Td
+(to)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+12.947 0 Td
+(handle)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+32.894 0 Td
+(info)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+20.474 0 Td
+[(ab)-28 (out)]TJ
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+29.583 0 Td
+(very)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+22.055 0 Td
+(many)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+27.926 0 Td
+(items)Tj
+0.2 0.2 0.7 rg
+/T1_6 9.963 Tf
+-282.647 -13.948 Td
+(e.g.)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+20.395 0 Td
+(counts)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+30.434 0 Td
+[(fo)28 (r)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+14.47 0 Td
+(100K)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+25.177 0 Td
+[(w)28 (o)28 (rds,)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+29.687 0 Td
+[(o)28 (r)]TJ
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.427 0 Td
+(millions)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+35.469 0 Td
+(of)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.343 0 Td
+(ngrams)Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-191.258 -18.376 Td
+(\017)Tj
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(Hash-based)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+55.066 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+23.485 0 Td
+(structures)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+47.903 0 Td
+[(a)27.995 (re)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+17.012 0 Td
+(very)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+22.055 0 Td
+(suitable)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+37.952 0 Td
+[(fo)27.995 (r)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+15.732 0 Td
+(this)Tj
+0.2 0.2 0.7 rg
+/T1_6 9.963 Tf
+-215.181 -13.948 Td
+(i.e.)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+17.794 0 Td
+(Python)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+33.145 0 Td
+[(dictiona)27.995 (ry)]TJ
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+44.96 0 Td
+(and)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+18.398 0 Td
+(set)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+15.882 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+21.635 0 Td
+(structures)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-167.271 -18.376 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.997 Td
+(Why?)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+30.672 0 Td
+(\026)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+14.452 0 Td
+[(allo)27.995 (w)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+26.421 0 Td
+(\(roughly\))Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+45.239 0 Td
+(constant)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+42.167 0 Td
+(time)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+24.21 0 Td
+(access)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+31.57 0 Td
+(to)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+12.947 0 Td
+(info)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+20.474 0 Td
+[(fo)27.995 (r)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+15.732 0 Td
+(a)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+8.807 0 Td
+[(k)27.995 (ey/item)]TJ
+0.2 0.2 0.7 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+-268.667 -13.947 Td
+(i.e.)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+17.794 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+10.586 0 Td
+(a)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+7.846 0 Td
+(\034xed)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+23.569 0 Td
+(\(small\))Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+32.083 0 Td
+(amount)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.628 0 Td
+(of)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.084 0 Td
+(time)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+21.376 0 Td
+[(irresp)-27.995 (ective)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+49.762 0 Td
+(of)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+11.084 0 Td
+[(ho)27.995 (w)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+19.715 0 Td
+(many)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+25.498 0 Td
+(items)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+25.194 0 Td
+[(sto)27.995 (red)]TJ
+0 0 1 rg
+/T1_3 11.955 Tf
+-305.676 -18.377 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(Using)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+28.717 0 Td
+(sequential)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+48.34 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+23.485 0 Td
+(structs)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+33.828 0 Td
+(\(e.g.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+25.292 0 Td
+(list\))Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+21.016 0 Td
+[(fo)27.995 (r)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+15.732 0 Td
+[(simila)27.995 (r)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+32.608 0 Td
+(tasks)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+26.3 0 Td
+(is)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+10.328 0 Td
+(a)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+8.807 0 Td
+(bad)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+19.947 0 Td
+(idea)Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-284.014 -12.951 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.432 -0.997 Td
+(gives)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+23.517 0 Td
+[(\(t)27.994 (ypically\))]TJ
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+45.07 0 Td
+[(linea)27.994 (r)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+25.564 0 Td
+(time)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+22.311 0 Td
+(access)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+29.023 0 Td
+(\(i.e.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_3 9.963 Tf
+19.533 0 Td
+(/)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.069 0 Td
+(num)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+21.525 0 Td
+(items)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+25.454 0 Td
+[(sto)27.994 (red\))]TJ
+0 0 1 rg
+/T1_3 11.955 Tf
+-256.317 -18.376 Td
+(\017)Tj
+0 g
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+[(T)82.977 (est)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+22.998 0 Td
+(\020)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+4.516 0 Td
+(item)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+26.146 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+15.687 0 Td
+(D)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+(\021)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+13.359 0 Td
+(uses)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+22.311 0 Td
+[(lo)-28.004 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+37.335 0 Td
+[(metho)-28.004 (d)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+37.787 0 Td
+[(app)27.995 (rop)27.005 (riate)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+54.196 0 Td
+(to)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+12.947 0 Td
+(D)Tj
+0 g
+/T1_6 9.963 Tf
+-225.464 -13.948 Td
+(e.g.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+19.367 0 Td
+(if)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+8.743 0 Td
+(it's)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+15.881 0 Td
+(a)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+8.106 0 Td
+(list)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+(,)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+18.261 0 Td
+[(lo)-27.994 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.418 0 Td
+(is)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+9.517 0 Td
+[(b)27.994 (y)]TJ
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+12.783 0 Td
+(left-to-right)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+51.488 0 Td
+(sequential)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+44.572 0 Td
+[(compa)27.994 (rison)]TJ
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+-223.136 -14.79 Td
+(e.g.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+19.367 0 Td
+(if)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+8.743 0 Td
+(it's)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+15.881 0 Td
+(a)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+8.106 0 Td
+(set)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+(,)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+17.929 0 Td
+[(lo)-27.994 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.418 0 Td
+(uses)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+20.529 0 Td
+(hash-based)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+49.864 0 Td
+[(metho)-27.994 (d)]TJ
+-174.837 -14.79 Td
+(e.g.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+19.367 0 Td
+(if)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+8.743 0 Td
+(it's)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+15.881 0 Td
+(a)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+8.106 0 Td
+[(dictiona)27.994 (ry)]TJ
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+(,)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+46.647 0 Td
+[(lo)-27.994 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.418 0 Td
+(uses)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+20.53 0 Td
+(hash-based)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+49.863 0 Td
+[(metho)-27.994 (d)]TJ
+ET
+0.28 0.28 0.73 rg
+0 0 120.943 8.64 re
+f
+BT
+1 g
+/T1_9 5.978 Tf
+19.729 2.658 Td
+[(Ma)33.155 (rk)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+17.393 0 Td
+(Hepple)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+24.762 0 Td
+(\(U.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+11.822 0 Td
+(She\036eld\))Tj
+ET
+q
+1 0 0 1 120.943 0 cm
+0.52 0.52 0.82 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+140.69 2.658 Td
+(COM6115:)Tj
+/T1_1 1 Tf
+31.795 0 Td
+( )Tj
+/T1_9 5.978 Tf
+3.121 0 Td
+[(T)97.999 (ext)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+15.517 0 Td
+[(Pro)-33.008 (cessing)]TJ
+ET
+q
+1 0 0 1 241.886 0 cm
+0.68 0.68 0.88 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+0 g
+344.645 2.658 Td
+[(4)-195.868 (/)-196.002 (6)]TJ
+ET
+/ADBE_FillSign BMC 
+q
+/Fm0 Do
+Q
+EMC 
+
+endstreamendobj164 0 obj<</ADBE_FillSign<</Subtype/page/Type/FillSignData>>/BBox[-32768.0 -32768.0 32768.0 32768.0]/FormType 1/Length 39/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</XObject<</Fm0 165 0 R>>>>/Subtype/Form/Type/XObject>>stream
+q
+0 Tc 0 Tw 0 Ts 100 Tz 0 Tr /Fm0 Do
+Q
+
+endstreamendobj165 0 obj<</ADBE_FillSign<</Subtype/fields/Type/FillSignData>>/BBox[32768.0 32768.0 -32768.0 -32768.0]/FormType 1/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/OC 166 0 R/Resources<<>>/Subtype/Form/Type/XObject>>stream
+0 TL
+q
+Q
+
+endstreamendobj166 0 obj<</OCGs 167 0 R/Type/OCMD>>endobj167 0 obj<</Name(Adobe Fill & Sign)/Type/OCG>>endobj168 0 obj<</AP<</N 175 0 R>>/C[1.0 0.819611 0.0]/CA 0.399994/CreationDate(D:20211109144038Z)/F 4/M(D:20211109144038Z)/NM(fe432995-765d-4cad-926d-77ef4a677982)/P 54 0 R/Popup 169 0 R/QuadPoints[36.6819 147.711 351.991 147.711 36.6819 135.537 351.991 135.537]/Rect[33.432 135.157 355.241 148.092]/Subj(Highlight)/Subtype/Highlight/T(Di Wang)/Type/Annot>>endobj169 0 obj<</F 28/Open false/Parent 168 0 R/Rect[362.835 33.7112 566.835 147.711]/Subtype/Popup/Type/Annot>>endobj170 0 obj<</AP<</N 172 0 R>>/C[1.0 0.819611 0.0]/CA 0.399994/CreationDate(D:20211109144056Z)/F 4/M(D:20211109144056Z)/NM(fd157406-1a9e-4457-88a5-b23912cc152b)/P 54 0 R/Popup 171 0 R/QuadPoints[43.044 115.377 49.0216 115.377 43.044 104.092 49.0216 104.092 54.476 114.39 216.173 114.39 54.476 102.216 216.173 102.216 230.563 114.39 306.506 114.39 230.563 102.216 306.506 102.216 219.494 112.886 227.243 112.886 219.494 103.481 227.243 103.481]/Rect[40.0312 101.836 309.756 115.73]/Subj(Highlight)/Subtype/Highlight/T(Di Wang)/Type/Annot>>endobj171 0 obj<</F 28/Open false/Parent 170 0 R/Rect[362.835 1.3774 566.835 115.377]/Subtype/Popup/Type/Annot>>endobj172 0 obj<</BBox[0.0 0.0 269.725 13.8945]/FormType 1/Length 27/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/CA 0.399994/Type/ExtGState/ca 0.399994>>/R1<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 173 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/R1 gs
+/MWFOForm Do
+
+endstreamendobj173 0 obj<</BBox[0.0 0.0 269.725 13.8945]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 174 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+
+endstreamendobj174 0 obj<</BBox[40.0312 101.836 309.756 115.73]/Filter[/FlateDecode]/FormType 1/Length 247/Matrix[1.0 0.0 0.0 1.0 -40.0312 -101.836]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâLë;é {N·X˛b8O§›&i∂…ıc¢≈–ÃÛ30ûù˛~aêºõ)í0“‰ÄW3B:uÁX08∂√éah6ëÑ˚AœÊå}d`Y*wK{ˆ£˝¨bùfsCãu(∏.ΩæÅ‘=â#w(¿å.∞6‘Iíyi‚ö]Ëô(«ö\⁄!;π¥ˇ·´ò(°wΩ
+âˆ©∑W§≤∑u:iÓÔ‘ÔNJ3üÕ/Ôêù]⁄’)≥Gå|¨µÇÕıçä6XV;î¯.·Yj¿Lÿ≥&îï_4∆ä\à…,îÔ%y…gø¥";π¨=~ï˚0 Ä“y
+endstreamendobj175 0 obj<</BBox[0.0 0.0 321.809 12.935]/FormType 1/Length 27/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/CA 0.399994/Type/ExtGState/ca 0.399994>>/R1<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 176 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/R1 gs
+/MWFOForm Do
+
+endstreamendobj176 0 obj<</BBox[0.0 0.0 321.809 12.935]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 177 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+
+endstreamendobj177 0 obj<</BBox[33.432 135.157 355.241 148.092]/FormType 1/Length 175/Matrix[1.0 0.0 0.0 1.0 -33.432 -135.157]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+1 0.819611 0 rg
+0.7609 w
+36.6819 135.5371 m
+33.8125 138.4066 33.8125 144.8418 36.6819 147.7112 c
+351.9915 147.7112 l
+354.8609 144.8418 354.8609 138.4066 351.9915 135.5371 c
+f
+
+endstreamendobj178 0 obj<</AP<</N 180 0 R>>/C[1.0 0.819611 0.0]/CA 0.399994/CreationDate(D:20211109144002Z)/F 4/M(D:20211109144006Z)/NM(dd4919cc-f3cb-48a7-8245-88294e79ae69)/P 47 0 R/Popup 179 0 R/QuadPoints[43.044 36.5353 49.0216 36.5353 43.044 25.2496 49.0216 25.2496 54.476 35.549 248.448 35.549 54.476 23.3749 248.448 23.3749]/Rect[40.0312 22.9944 251.698 36.8879]/Subj(Highlight)/Subtype/Highlight/T(Di Wang)/Type/Annot>>endobj179 0 obj<</F 28/Open false/Parent 178 0 R/Rect[362.835 -77.4647 566.835 36.5353]/Subtype/Popup/Type/Annot>>endobj180 0 obj<</BBox[0.0 0.0 211.666 13.8935]/FormType 1/Length 27/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/CA 0.399994/Type/ExtGState/ca 0.399994>>/R1<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 181 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/R1 gs
+/MWFOForm Do
+
+endstreamendobj181 0 obj<</BBox[0.0 0.0 211.666 13.8935]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 182 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+
+endstreamendobj182 0 obj<</BBox[40.0312 22.9944 251.698 36.8879]/Filter[/FlateDecode]/FormType 1/Length 155/Matrix[1.0 0.0 0.0 1.0 -40.0312 -22.9944]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+Hâ<éª1C{M°	˝eœs@“\ö4Y?2pvIäO§ ”êô"»¯}Sq8˛¿çÿ5H}&~¿ôlÿD-ö‹Œ÷f4*¿í¬¬üƒ*yúB(á‘A∂>/bó^ZÉíg
+'ØæY˘ÏAãÊ‘Ït7omJYM?ÄEÁ/P‰^c;7h#&e9∆˛yò]ª&˝ H≠;˝
+endstreamendobj183 0 obj<</Length 6522>>stream
+0.99 g
+0 0 362.835 272.126 re
+f
+q
+1 0 0 1 0 244.24 cm
+0.52 0.52 0.82 rg
+0 0 362.835 27.886 re
+f
+Q
+BT
+1 g
+/T1_0 14.346 Tf
+8.504 251.907 Td
+(Python)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+45.465 0 Td
+(Tips)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_0 14.346 Tf
+29.404 0 Td
+(\026)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+18.226 0 Td
+(the)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+22.625 0 Td
+[(Go)-26 (o)-27 (d,)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+38.951 0 Td
+(the)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+22.625 0 Td
+(Bad,)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+31.084 0 Td
+(and)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+25.234 0 Td
+(the)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_2 14.346 Tf
+22.625 0 Td
+(Ugly)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-243.518 -31.588 Td
+(\017)Tj
+1 0 0 rg
+/T1_4 10.909 Tf
+11.433 -0.996 Td
+(Elegance)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+44.011 0 Td
+(is)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+10.327 0 Td
+[(imp)-28 (o)28 (rtant:)]TJ
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-43.952 -12.951 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.432 -0.997 Td
+[(clea)28 (r,)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+25.232 0 Td
+(readable)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+37.821 0 Td
+[(co)-28 (ding)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+30.656 0 Td
+(helps)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+24.236 0 Td
+(rapid/e\033ective)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+63.248 0 Td
+[(co)-28 (de)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+22.576 0 Td
+(development)Tj
+0 0 1 rg
+/T1_3 11.955 Tf
+-237.02 -21.211 Td
+(\017)Tj
+0 g
+/T1_5 10.909 Tf
+11.433 -0.996 Td
+(Lea)Tj
+1 0 0 1 -0 0 Tm
+48.236 183.168 Td
+(rn)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+12.88 0 Td
+(to)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+12.947 0 Td
+(use)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+18.155 0 Td
+(the)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+17.915 0 Td
+(clean)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+26.572 0 Td
+(constructs)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+49.635 0 Td
+(Python)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+35.96 0 Td
+[(p)27.995 (rovides)]TJ
+0.2 0.2 0.7 rg
+/T1_6 9.963 Tf
+-188.219 -13.948 Td
+(e.g.)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+20.395 0 Td
+(use)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+20.031 0 Td
+(k)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+10.458 0 Td
+(in)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+15.688 0 Td
+(dict)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+27.556 0 Td
+(rather)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+28.082 0 Td
+(than)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_7 9.963 Tf
+25.316 0 Td
+(dict.has_key\(k\))Tj
+/T1_3 11.955 Tf
+-160.382 -21.211 Td
+(\017)Tj
+0 g
+/T1_5 10.909 Tf
+11.433 -0.996 Td
+(Kno)Tj
+1 0 0 1 -0 -0 Tm
+50.833 147.013 Td
+(w)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+10.991 0 Td
+(the)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+17.915 0 Td
+(default)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+34.55 0 Td
+(iteration)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+41.476 0 Td
+[(b)-28.004 (ehaviour)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+47.271 0 Td
+(of)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+12.345 0 Td
+[(y)27.995 (our)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+22.958 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+23.485 0 Td
+(structure)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-218.78 -12.951 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.432 -0.997 Td
+(so)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+12.118 0 Td
+(can)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+17.679 0 Td
+(usually)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+31.569 0 Td
+(address)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+33.865 0 Td
+(content)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.639 0 Td
+(via)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+15.079 0 Td
+(a)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+8.106 0 Td
+(simple)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+29.383 0 Td
+[(fo)27.995 (r)]TJ
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+12.229 0 Td
+[(-lo)-27.995 (op)]TJ
+0 0 1 rg
+/T1_3 11.955 Tf
+-227.918 -21.211 Td
+(\017)Tj
+0 g
+/T1_5 10.909 Tf
+11.433 -0.996 Td
+(Understand)Tj
+/T1_1 1 Tf
+1 0 0 1 -0 -0 Tm
+84.105 110.858 Td
+( )Tj
+/T1_5 10.909 Tf
+3.616 0 Td
+(the)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+17.915 0 Td
+[(imp)-28.004 (o)28.004 (rtance)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+53.744 0 Td
+(of)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_4 10.909 Tf
+12.345 0 Td
+(hash-based)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+54.167 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_5 10.909 Tf
+23.485 0 Td
+(structures)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-206.333 -12.951 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.432 -0.997 Td
+[(allo)27.995 (w)]TJ
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+24.375 0 Td
+(constant)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+38.817 0 Td
+(time)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+22.311 0 Td
+[(lo)-27.995 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.418 0 Td
+(/)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+8.3 0 Td
+[(up)-27.995 (date)]TJ
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-139.653 -13.793 Td
+(\005)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.432 -0.996 Td
+(usually)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+31.568 0 Td
+(much)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+25.952 0 Td
+[(mo)27.995 (re)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+23.766 0 Td
+(e\036cient)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+35.829 0 Td
+(than)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+21.996 0 Td
+(sequence-based)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+66.927 0 Td
+(data)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+21.636 0 Td
+(structures)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_3 11.955 Tf
+-239.106 -13.794 Td
+(\005)Tj
+1 0 0 rg
+/T1_1 1 Tf
+( )Tj
+/T1_8 9.963 Tf
+11.432 -0.996 Td
+[(b)-27.995 (ew)27.995 (a)27.995 (re)]TJ
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+32.714 0 Td
+(of)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+11.343 0 Td
+(doing)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+25.952 0 Td
+(sequence-based)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+66.927 0 Td
+[(lo)-27.995 (ok-up)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+34.418 0 Td
+(in)Tj
+0 0 1 rg
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+10.846 0 Td
+(hash-based)Tj
+0 g
+/T1_1 1 Tf
+( )Tj
+/T1_6 9.963 Tf
+48.86 0 Td
+(structures)Tj
+ET
+q
+1 0 0 1 -0 -0 cm
+0.28 0.28 0.73 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+1 g
+/T1_9 5.978 Tf
+19.729 2.658 Td
+(Ma)Tj
+1 0 0 1 -0 -0 Tm
+28.976 2.658 Td
+(rk)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+8.146 0 Td
+(Hepple)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+24.762 0 Td
+(\(U.)Tj
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+11.822 0 Td
+(She\036eld\))Tj
+ET
+q
+1 0 0 1 120.943 -0 cm
+0.52 0.52 0.82 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+140.69 2.658 Td
+(COM6115:)Tj
+/T1_1 1 Tf
+1 0 0 1 -0 -0 Tm
+172.485 2.658 Td
+( )Tj
+/T1_9 5.978 Tf
+3.121 0 Td
+[(T)97.999 (ext)]TJ
+/T1_1 1 Tf
+( )Tj
+/T1_9 5.978 Tf
+15.517 0 Td
+[(Pro)-33.007 (cessing)]TJ
+ET
+q
+1 0 0 1 241.886 -0 cm
+0.68 0.68 0.88 rg
+0 0 120.943 8.64 re
+f
+Q
+BT
+0 g
+344.645 2.658 Td
+(2)Tj
+1 0 0 1 -0 -0 Tm
+349.325 2.658 Td
+[(/)-195.998 (6)]TJ
+ET
+
+endstreamendobj184 0 obj<</AP<</N 186 0 R>>/C[1.0 0.819611 0.0]/CA 0.399994/CreationDate(D:20211109144416Z)/F 4/M(D:20211109144416Z)/NM(40480f7a-b71a-4052-bb1e-224d3e57a9f3)/P 34 0 R/Popup 185 0 R/QuadPoints[34.081 178.197 67.8662 178.197 34.081 166.022 67.8662 166.022 74.507 177.569 121.571 177.569 74.507 165.633 121.571 165.633 128.209 178.197 174.965 178.197 128.209 166.022 174.965 166.022 181.607 177.569 260.051 177.569 181.607 165.633 260.051 165.633]/Rect[30.8309 165.26 263.237 178.577]/Subj(Highlight)/Subtype/Highlight/T(Di Wang)/Type/Annot>>endobj185 0 obj<</F 28/Open false/Parent 184 0 R/Rect[362.835 64.1965 566.835 178.197]/Subtype/Popup/Type/Annot>>endobj186 0 obj<</BBox[0.0 0.0 232.406 13.3165]/FormType 1/Length 27/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/CA 0.399994/Type/ExtGState/ca 0.399994>>/R1<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 187 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/R1 gs
+/MWFOForm Do
+
+endstreamendobj187 0 obj<</BBox[0.0 0.0 232.406 13.3165]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 188 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+
+endstreamendobj188 0 obj<</BBox[30.8309 165.26 263.237 178.577]/Filter[/FlateDecode]/FormType 1/Length 238/Matrix[1.0 0.0 0.0 1.0 -30.8309 -165.26]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâlëKn!˜úÇXÿ‡Á)ŸL6Ÿ‰˙1ÈÿÓëfá^Sœ¶˚ √-à}ÙÔœ6@eÏ˛”ÊÇaÿQ·Ó_m"‚Ú»¿6rœ@&…Ó¡®ÅWr4Q0™ËŸ‘GL∂¢2àﬁÑbˆ£}ú≈ñ¯^∫Äá˙7ôì}/Eê=/~-—ûÅﬂUˆÊ`TÅÂ‘!!∞˛≠~EOèLÛIU≈Ö≈ÙˇÕ.eH‰ßõ3$‰‹7iïƒ˚+mg?≠ª∑≥™˘»‚"»Í§ﬁâCs-ØÊNªæ®´$-ñÚH∆õ;Ú?∂®®J¢9©ª∫_ ﬂû|Õ
+endstreamendobj189 0 obj<</BaseFont/Helvetica/Encoding 191 0 R/Name/Helv/Subtype/Type1/Type/Font>>endobj190 0 obj<</BaseFont/ZapfDingbats/Name/ZaDb/Subtype/Type1/Type/Font>>endobj191 0 obj<</Differences[24/breve/caron/circumflex/dotaccent/hungarumlaut/ogonek/ring/tilde 39/quotesingle 96/grave 128/bullet/dagger/daggerdbl/ellipsis/emdash/endash/florin/fraction/guilsinglleft/guilsinglright/minus/perthousand/quotedblbase/quotedblleft/quotedblright/quoteleft/quoteright/quotesinglbase/trademark/fi/fl/Lslash/OE/Scaron/Ydieresis/Zcaron/dotlessi/lslash/oe/scaron/zcaron 160/Euro 164/currency 166/brokenbar 168/dieresis/copyright/ordfeminine 172/logicalnot/.notdef/registered/macron/degree/plusminus/twosuperior/threesuperior/acute/mu 183/periodcentered/cedilla/onesuperior/ordmasculine 188/onequarter/onehalf/threequarters 192/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]/Type/Encoding>>endobj192 0 obj<</Filter/FlateDecode/First 6/Length 263/N 1/Type/ObjStm>>stream
+hﬁ<ê_oÉ ≈ø
+èÌ√Ç‘Í^k◊fI˝m˚bÃ¬ÙŒò)¿á}˚]Ë≤íŒπXƒH@öúéoÁqöÍqêÔÚK°ˆ mF%	Œi“iuVz&,–S—´ê√‰ÀΩﬁ“LËÔ?óCËâ’+†++za∫òwÂbCXÙÃ(“R´¥¡†˜Ñ´»ø∫”ñ∫›¥¥:^¥Z”¥Y§Û≈ÌêIg˝KCüZäÆ‚&óôØ≥iÑr√∂ú3O;§ùß)Ù¥G⁄{äê"O1íõ·3’Ω(V;çå	üMj,‹Ÿõ®î≤¯g^Ω˝,@SÏ?©ÅÛ_ ß◊l
+endstreamendobj193 0 obj<</Filter/FlateDecode/First 26/Length 335/N 4/Type/ObjStm>>stream
+hﬁƒì›J√@Ö_eû†˚7ªŸ@	¯CÔƒ“‰B(A“∏àÇâ$[®oÔ$›µµl‚’úL&ªgæCL@qÇ·`y
+”)ªjö÷˜K%if¬b®z®%ªiÔﬂSGvÁû^™Îv≥‰Ù®åúX•A&r"§)ŸºÍhöngÆo◊]Ìz∫gFQ)ƒ#}f«◊§HµïF≠ y‘‰XD=\µîQ'Ä*jàQß «3≥åÕª∂Œù_≤˘Ìån„KjÊæ[◊~ÎövdEµÍYŒäÆj”9æ,>ﬁmˆÏ≤lıTbCMÄ°Ωúe46æ€ìgÿ”!OÏô4ÿ‰°ä√|ÕˇÂªÀTÔe}ê/ÓÂ´N ó=‹Ø^]=ÿöΩq⁄∑£Gπ´s¿⁄#pÚè¡	˙ãäaÂÀê‹C*Fäx˙/Éø¢˚` É+/L
+endstreamendobj194 0 obj<</DecodeParms<</Columns 5/Predictor 12>>/Filter/FlateDecode/ID[<98459FFBE2F6329BB71D20B85F4A10A6><EDE009DCF39DD141B0DAD1768C372896>]/Index[34 1 47 1 54 1 60 1 151 1 153 1 155 40]/Info 153 0 R/Length 135/Prev 347045/Root 151 0 R/Size 195/Type/XRef/W[1 3 1]>>stream
+hﬁbbb`8» $—…ˇô˛≥˙_g`˙ˇ{c&D6íë5‡'àÕÿ"˘ã@§å=àTãÀÅ…/`ı∫`“D2AÃ,≥¡jä¡dò|ø fGÉ…◊`∞˘åK¿d)Üz∞à‰z0[,^Ç°Êÿ^àààdY	Oã¨g 0 bŒ	
+endstreamendobjstartxref
+384202
+%%EOF
+153 0 obj<</Author(Mark Hepple)/CreationDate(D:20201113020307Z)/Creator(LaTeX with Beamer class)/Keywords()/ModDate(D:20211207201339Z)/PTEX.Fullbanner(This is pdfTeX, Version 3.14159265-2.6-1.40.21 \(TeX Live 2020\) kpathsea version 6.3.2)/Producer(pdfTeX-1.40.21)/Subject()/Title(COM6115: Text Processing [4mm] Programming Tips)/Trapped/False>>endobj161 0 obj<</Length 3875/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 7.0-c000 79.1357c9e, 2021/07/14-00:39:56        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Mark Hepple</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default"/>
+            </rdf:Alt>
+         </dc:description>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">COM6115: Text Processing [4mm] Programming Tips</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2020-11-13T02:03:07Z</xmp:CreateDate>
+         <xmp:CreatorTool>LaTeX with Beamer class</xmp:CreatorTool>
+         <xmp:ModifyDate>2021-12-07T20:13:39Z</xmp:ModifyDate>
+         <xmp:MetadataDate>2021-12-07T20:13:39Z</xmp:MetadataDate>
+         <pdf:Keywords/>
+         <pdf:Producer>pdfTeX-1.40.21</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+         <pdfx:PTEX.Fullbanner>This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) kpathsea version 6.3.2</pdfx:PTEX.Fullbanner>
+         <xmpMM:DocumentID>uuid:037fd1ee-8ece-440c-86c5-9823a4901ac7</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:609992e0-e260-5e41-b142-41c478ef828e</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>endstreamendobj195 0 obj<</AP<</N 202 0 R>>/C[1.0 0.819611 0.0]/CA 0.399994/CreationDate(D:20211207201003Z)/F 4/M(D:20211207201003Z)/NM(360fdab4-cbab-c348-9094-6343d07b717b)/P 60 0 R/Popup 196 0 R/QuadPoints[54.476 197.814 63.2742 197.814 54.476 185.639 63.2742 185.639 66.5939 197.186 134.577 197.186 66.5939 185.25 134.577 185.25 137.893 197.814 194.25 197.814 137.893 185.639 194.25 185.639 197.571 197.186 228.946 197.186 197.571 185.25 228.946 185.25 235.586 197.814 311.948 197.814 235.586 185.639 311.948 185.639]/Rect[51.2259 184.877 315.198 198.194]/Subj(Highlight)/Subtype/Highlight/T(Di Wang)/Type/Annot>>endobj196 0 obj<</F 28/Open false/Parent 195 0 R/Rect[362.835 83.8135 566.835 197.814]/Subtype/Popup/Type/Annot>>endobj197 0 obj<</AP<</N 199 0 R>>/C[1.0 0.819611 0.0]/CA 0.399994/CreationDate(D:20211207201045Z)/F 4/M(D:20211207201045Z)/NM(f3689a5a-f299-6140-8278-f509dee77e0a)/P 60 0 R/Popup 198 0 R/QuadPoints[54.476 56.8505 170.761 56.8505 54.476 44.6759 170.761 44.6759]/Rect[51.226 44.2954 174.011 57.231]/Subj(Highlight)/Subtype/Highlight/T(Di Wang)/Type/Annot>>endobj198 0 obj<</F 28/Open false/Parent 197 0 R/Rect[362.835 -57.1495 566.835 56.8505]/Subtype/Popup/Type/Annot>>endobj199 0 obj<</BBox[0.0 0.0 122.785 12.9356]/FormType 1/Length 27/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/CA 0.399994/Type/ExtGState/ca 0.399994>>/R1<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 200 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/R1 gs
+/MWFOForm Do
+endstreamendobj200 0 obj<</BBox[0.0 0.0 122.785 12.9356]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 201 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj201 0 obj<</BBox[51.226 44.2954 174.011 57.231]/FormType 1/Length 163/Matrix[1.0 0.0 0.0 1.0 -51.226 -44.2954]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+1 0.819611 0 rg
+0.7609 w
+54.476 44.6759 m
+51.6064 47.5455 51.6064 53.9809 54.476 56.8505 c
+170.761 56.8505 l
+173.6306 53.9809 173.6306 47.5455 170.761 44.6759 c
+f
+endstreamendobj202 0 obj<</BBox[0.0 0.0 263.972 13.3165]/FormType 1/Length 27/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ExtGState<</R0<</AIS false/CA 0.399994/Type/ExtGState/ca 0.399994>>/R1<</AIS false/BM/Multiply/Type/ExtGState>>>>/ProcSet[/PDF]/XObject<</MWFOForm 203 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/R0 gs
+/R1 gs
+/MWFOForm Do
+endstreamendobj203 0 obj<</BBox[0.0 0.0 263.972 13.3165]/FormType 1/Group<</S/Transparency>>/Length 9/Matrix[1.0 0.0 0.0 1.0 0.0 0.0]/Resources<</ProcSet[/PDF]/XObject<</Form 204 0 R>>>>/Subtype/Form/Type/XObject>>stream
+/Form Do
+endstreamendobj204 0 obj<</BBox[51.2259 184.877 315.198 198.194]/Filter[/FlateDecode]/FormType 1/Length 274/Matrix[1.0 0.0 0.0 1.0 -51.2259 -184.877]/Resources<</ProcSet[/PDF]>>/Subtype/Form/Type/XObject>>stream
+HâlíKé!˜úÇXÿ‡ﬂy"M6=õŸ‰˙1I¿åî]˜√ıpókCƒ⁄ÍﬂΩ4Pi^Öïä∆ ›º˛Fê&#"n∆u>¿G˜∫◊ËÏ\oE:ê Ë*"Ä£kR;XΩZwﬂ œ\lHÏ”ÏAÕC‚∆±XÃ´µwAìh⁄A\—ï¨n(÷@ì(ƒ>ÄUtGWD
+Øô¥ﬁWk"ÎÍœ^oas‹ú¸T_ç˙·,ìı˘…•∂yH√ÌÙˆZ4r'ª}sﬂ‘ÕyV<’M@Ywôl€Úà,6`>‰Q«¿ÃÀdU'ˆU Ö6˛'ê:Å‚˘”e≤4$ó;bûˇ‚ŸàG•$3YÌ…ùü ≥ûendstreamendobj205 0 obj<</Filter/FlateDecode/First 5/Length 217/N 1/Type/ObjStm>>stream
+hﬁ<è›j√0Ö_EOP˘?	î¿⁄—ªAh|¬»23vc€ÖÓÌ'gqÆŒ'È	Œg|Ò>‰4Èñ ;NÔjvmv›Ê3^ÉœŒÁ‹à“¡7˜˘Ω\¬s*˚§ßVjç8qafñHnêlÛﬁ]
+è∏∫Dwo¥àƒÚwämÀs˙`öM∫ZêKP¨≤¢√ï5®#l¿® (Qπ%+w†6Oﬂ„√:∫<·zCÎûy¶Êò„cÕˇˇ$PhóèÑ#⁄∏¯ÚŒà%i˝¸Â˙˛OÄ p¬Y¬endstreamendobj206 0 obj<</DecodeParms<</Columns 4/Predictor 12>>/Filter/FlateDecode/ID[<98459FFBE2F6329BB71D20B85F4A10A6><EA04770CEAC14EEEBD1E34060225F6DE>]/Index[60 1 153 1 161 1 195 12]/Info 153 0 R/Length 55/Prev 384202/Root 151 0 R/Size 207/Type/XRef/W[1 3 0]>>stream
+hﬁbbb`8ÀÙüıﬁQ É1	H	&ã±D§ÅàR"^ÉàêD0ô ∞}
+Jendstreamendobjstartxref392488%%EOF
