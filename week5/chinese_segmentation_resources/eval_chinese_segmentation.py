@@ -16,8 +16,8 @@ opts = dict(opts)
 def printHelp():
     progname = sys.argv[0]
     progname = progname.split('/')[-1] # strip out extended path
-    help = __doc__.replace('<PROGNAME>', progname, 1)
-    print('-' * 60, help, '-' * 60, file=sys.stderr)
+    help_message = __doc__.replace('<PROGNAME>', progname, 1)
+    print('-' * 60, help_message, '-' * 60, file=sys.stderr)
     sys.exit()
     
 if '-h' in opts:
